@@ -8,3 +8,160 @@
     margin: 0;
     padding: 0;
 }
+
+.container{
+    margin: 50px 130px;
+}
+
+/* header part style */
+.header-content{
+    background-color: rgb(69, 69, 189);
+    display: flex;
+    border-radius: 30px;
+    
+}
+.header-article{
+    display: flex;
+    align-items: center;
+}
+.header-article, .header-image{
+    padding: 0px 80px;
+}
+.contents h1, .contents p{
+    color: white;
+}
+.header-title{
+    font-size: 70px;
+}
+.common-button{
+    background-color: #DD0000;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 15px;
+    color: white;
+    border-radius: 5px;
+}
+.header-image img{
+    width: 30vw;
+}
+
+/* end of the header style */
+
+/* main part style  */
+
+main{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+/* menu bar style */
+.menu-bar{
+    background-color: rgb(69, 69, 189);
+    padding: 30px;
+    border-radius: 10px;
+    height: 312px;
+    width: 312px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options button{
+    display: block;
+    margin: 40px 0px;
+    width: 252px;
+    height: 64px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+.options button a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.active{
+    background-color: #DD0000 !important;
+}
+.active a{
+    color: white !important;
+}
+
+/* menu bar style end */
+
+/* blog style  */
+
+.blog-contents{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    margin: 0px 20px;
+    
+    
+}
+.blog{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 311.894px;
+}
+.transfer-btn{
+    display: block;
+    padding: 4px 16px;
+    margin-bottom: 10px;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+}
+
+.comments{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.details{
+    padding: 20px;
+}
+
+/* blog part style end  */
+/* main part style end  */
+
+/* footer style  */
+footer{
+    background-color: black;
+    height: 400px;
+    margin-top: 100px;
+    color: white;
+    
+}
+
+.footer-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.footer-element-title h1{
+    text-align: center;
+}
+hr{
+    margin: 20px;
+}
+
+.other-options{
+    display: flex;
+    
+}
+
+.other-options p{
+    margin: 0px 10px;
+    color: #B9B9B9;
+}
