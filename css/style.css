@@ -1,0 +1,10 @@
+/* google font importer */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* default css style*/
+
+*{
+    font-family:  'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
