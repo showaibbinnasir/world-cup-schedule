@@ -157,6 +157,10 @@ main{
     text-align: center;
 }
 
+.details p{
+    font-weight: 700;
+}
+
 /* blog part style end  */
 /* main part style end  */
 
@@ -204,6 +208,17 @@ hr{
 .other-options p{
     margin: 0px 10px;
     color: #B9B9B9;
+}
+
+.social-icons{
+    font-size: 24px;
+    text-align: center;
+    
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: white;
 }
 
 /* footer part end  */
