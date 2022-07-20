@@ -40,10 +40,22 @@
     margin-top: 15px;
     color: white;
     border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.common-button:hover{
+    background-color: blue;
 }
 .header-image img{
     width: 30vw;
+    transform: translate(40px, 7px); 
+    transition: all 0.5s ease-out;  
 }
+
+.header-content:hover > .header-image > img {
+    transform: translate(10px, 7px); 
+}
+
 
 /* end of the header style */
 
@@ -104,6 +116,20 @@ main{
     border: 1px solid black;
     border-radius: 10px;
     width: 311.894px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.country{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.country img{
+    padding: 0 10px;
 }
 .transfer-btn{
     display: block;
@@ -128,12 +154,26 @@ main{
 
 .details{
     padding: 20px;
+    text-align: center;
 }
 
 /* blog part style end  */
 /* main part style end  */
 
 /* footer style  */
+.footer-button button{
+    background-color: #DD0000;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 30px;
+    color: white;
+    border-radius: 5px;
+}
+
+.footer-button{
+    display: none;
+    justify-content: center;
+}
 footer{
     background-color: black;
     height: 400px;
@@ -164,4 +204,143 @@ hr{
 .other-options p{
     margin: 0px 10px;
     color: #B9B9B9;
+}
+
+/* footer part end  */
+
+/* media query starts here  */
+
+/* for mobile devices */
+@media only screen and (max-width:668px){
+
+    .container{
+        margin: 20px;
+    }
+    .header-title{
+        font-size: 30px;
+    }
+    .header-article, .header-image{
+        padding: 2px 10px;
+    }
+    .header-content{
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+    
+
+    .header-article{
+        text-align: center;
+    }
+
+    .header-image img{
+        width: 60vw;
+        transform: translate(40px, 18px);
+        margin-top: 20px;
+    }
+    .header-content:hover > .header-image > img {
+        width: 65vw;
+        transform: translate(10px, 20px); 
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .menu-bar{
+        margin-bottom: 50px;
+        background-color: white;
+        padding: 10px;
+        margin: 0px;
+        
+    }
+    .options button{
+        border: 1px solid black;
+        margin: 10px 0px;
+        width: 200px;
+    }
+    .blog-contents{
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px 5px;
+        grid-gap: 10px;
+    }
+    .other-options{
+        flex-direction: column;
+        text-align: center;
+    }
+    .blog{
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 260px;
+    }
+
+    .blog img{
+        width: 100%;
+    }
+    
+}
+
+
+/* for tablet devices */
+@media only screen and (min-Width:669px) and (max-width:1080px){
+
+    /* header part style  */
+    .container{
+        margin: 50px;
+        
+    }
+    .header-title{
+        font-size: 40px;
+    }
+    
+    .header-article, .header-image{
+        padding: 5px 20px;
+    }
+
+    .header-image img{
+        width: 320px;
+        height: 340px;
+        margin-top: 50px;
+        transform: translate(10px, 12px);   
+    }
+    
+    
+
+    /* main part style  */
+    main{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    .blog-contents{
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .menu-bar{
+        margin-bottom: 50px;
+        background-color: white;
+        padding: 10px;
+        margin: 0px;
+        
+    }
+
+
+    /* footer part style  */
+
+    .options{
+        display: flex;
+        
+    }
+    .options button{
+        border: 1px solid black;
+        margin: 0px 10px;
+        width: 200px;
+    }
+    
+    .other-options p{
+        margin: 0px 11px;
+        
+    }
+    .footer-button{
+        display: flex;
+    }
 }
